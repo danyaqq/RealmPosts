@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A57A0D8C269856A8007661E4 /* AnotherRealmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A0D8B269856A8007661E4 /* AnotherRealmApp.swift */; };
-		A57A0D8E269856A8007661E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A0D8D269856A8007661E4 /* ContentView.swift */; };
 		A57A0D90269856AA007661E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57A0D8F269856AA007661E4 /* Assets.xcassets */; };
 		A57A0D93269856AA007661E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57A0D92269856AA007661E4 /* Preview Assets.xcassets */; };
+		A57A0D9E26985712007661E4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A0D9D26985712007661E4 /* HomeView.swift */; };
+		A57A0DA026986016007661E4 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A0D9F26986016007661E4 /* AddView.swift */; };
+		A57A0DA2269864E2007661E4 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A0DA1269864E2007661E4 /* PostModel.swift */; };
+		A57A0DA42698652A007661E4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A0DA32698652A007661E4 /* Post.swift */; };
+		A57A0DA626989412007661E4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57A0DA526989412007661E4 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A57A0D88269856A8007661E4 /* AnotherRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57A0D8B269856A8007661E4 /* AnotherRealmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherRealmApp.swift; sourceTree = "<group>"; };
-		A57A0D8D269856A8007661E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A57A0D8F269856AA007661E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57A0D92269856AA007661E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A57A0D94269856AA007661E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57A0D9D26985712007661E4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A57A0D9F26986016007661E4 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		A57A0DA1269864E2007661E4 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		A57A0DA32698652A007661E4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A57A0DA526989412007661E4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			children = (
 				A57A0D8A269856A8007661E4 /* AnotherRealm */,
 				A57A0D89269856A8007661E4 /* Products */,
+				F922C08C4C1F3345629EC5BC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +61,14 @@
 		A57A0D8A269856A8007661E4 /* AnotherRealm */ = {
 			isa = PBXGroup;
 			children = (
+				A57A0D9C26985703007661E4 /* ViewModel */,
+				A57A0D9B269856FF007661E4 /* View */,
+				A57A0D9A269856F1007661E4 /* Model */,
 				A57A0D8B269856A8007661E4 /* AnotherRealmApp.swift */,
-				A57A0D8D269856A8007661E4 /* ContentView.swift */,
 				A57A0D8F269856AA007661E4 /* Assets.xcassets */,
 				A57A0D94269856AA007661E4 /* Info.plist */,
 				A57A0D91269856AA007661E4 /* Preview Content */,
+				A57A0DA526989412007661E4 /* Launch Screen.storyboard */,
 			);
 			path = AnotherRealm;
 			sourceTree = "<group>";
@@ -67,6 +79,38 @@
 				A57A0D92269856AA007661E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A57A0D9A269856F1007661E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A57A0DA1269864E2007661E4 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A57A0D9B269856FF007661E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A57A0D9D26985712007661E4 /* HomeView.swift */,
+				A57A0D9F26986016007661E4 /* AddView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A57A0D9C26985703007661E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A57A0DA32698652A007661E4 /* Post.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F922C08C4C1F3345629EC5BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57A0DA626989412007661E4 /* Launch Screen.storyboard in Resources */,
 				A57A0D93269856AA007661E4 /* Preview Assets.xcassets in Resources */,
 				A57A0D90269856AA007661E4 /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57A0D8E269856A8007661E4 /* ContentView.swift in Sources */,
 				A57A0D8C269856A8007661E4 /* AnotherRealmApp.swift in Sources */,
+				A57A0DA2269864E2007661E4 /* PostModel.swift in Sources */,
+				A57A0D9E26985712007661E4 /* HomeView.swift in Sources */,
+				A57A0DA026986016007661E4 /* AddView.swift in Sources */,
+				A57A0DA42698652A007661E4 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
