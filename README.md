@@ -1,4 +1,4 @@
-# RealmPosts SwiftUI 
+# Realm posts SwiftUI 
 
 > Приложение для добавления и удаления заметок с помощью Realm.
 
